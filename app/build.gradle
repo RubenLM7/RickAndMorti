@@ -1,0 +1,99 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    namespace 'com.example.rickandmorti'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.rickandmorti"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+
+    implementation project(':app:data')
+    implementation project(':app:domain')
+    implementation project(':app:presentation')
+
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.7.20'
+    implementation 'org.jetbrains.kotlin:kotlin-reflect:1.7.20"'
+    implementation 'androidx.core:core-ktx:1.9.0"'
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.2.0'
+
+    // Testing
+    testImplementation'junit:junit:4.13.2'
+    testImplementation'android.arch.core:core-testing:1.1.1'
+    testImplementation'org.mockito:mockito-core:4.6.1'
+    testImplementation'com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0'
+    testImplementation'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4'
+
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-dynamic-features-fragment:2.5.3'
+
+    implementation platform("com.google.firebase:firebase-bom:25.12.0")
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    implementation 'com.google.code.gson:gson:2.9.0'
+
+    // Koin main features for Android
+    implementation 'io.insert-koin:koin-android:3.2.2'
+    implementation 'io.insert-koin:koin-core:3.2.2'
+    implementation 'io.insert-koin:koin-androidx-navigation:3.2.2'
+    testImplementation 'io.insert-koin:koin-test-junit4:3.2.0'
+
+    /*implementation 'androidx.room:room-runtime:2.5.0'
+    implementation 'androidx.room:room-ktx:2.5.0'
+    kapt 'androidx.room:room-compiler:2.5.0'*/
+
+    // Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:retrofit-mock:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
+
+    // OkHttp 3
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.9'
+    implementation 'com.squareup.okhttp3:okhttp-urlconnection:5.0.0-alpha.9'
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.9'
+}

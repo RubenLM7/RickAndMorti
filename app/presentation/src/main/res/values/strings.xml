@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RickAndMorti</string>
+    <string name="characters">Characters</string>
+    <string name="try_again">do you want to try again?</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="error">Error</string>
+    <string name="timeout_try_again">The response time has expired, do you want to try again?</string>
+    <string name="connection_timeout">Connection timeout</string>
+    <string name="character_details">Character details</string>
+
+</resources>

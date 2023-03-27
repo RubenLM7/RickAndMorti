@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- font size -->
+    <dimen name="font_very_small">12sp</dimen>
+    <dimen name="font_small">14sp</dimen>
+    <dimen name="font_medium">16sp</dimen>
+    <dimen name="font_medium_big">18sp</dimen>
+    <dimen name="font_big">20sp</dimen>
+    <dimen name="font_very_big">25sp</dimen>
+    <dimen name="font_very_very_big">30sp</dimen>
+    <dimen name="font_huge">40sp</dimen>
+
+    <!-- margins -->
+    <dimen name="margin_tiny">5dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_normal">10dp</dimen>
+    <dimen name="margin_big">16dp</dimen>
+    <dimen name="margin_very_big">20dp</dimen>
+    <dimen name="margin_very_very_big">24dp</dimen>
+    <dimen name="margin_huge">30dp</dimen>
+    <dimen name="margin_extra_huge">48dp</dimen>
+
+    <!-- icon sizes -->
+    <dimen name="icon_big">48dp</dimen>
+    <dimen name="icon_small">30dp</dimen>
+    <dimen name="icon_floor_container">42dp</dimen>
+
+    <dimen name="access_manager_item_heigh">34dp</dimen>
+    <dimen name="card_elevation">10dp</dimen>
+    <dimen name="card_border_radius">5dp</dimen>
+    <dimen name="map_height">300dp</dimen>
+    <dimen name="component_height">150dp</dimen>
+    <dimen name="component_details_item_height">80dp</dimen>
+    <dimen name="component_detailed_info_item_height">100dp</dimen>
+    <dimen name="detailed_title_indentation">30dp</dimen>
+    <dimen name="safety_table_value_width">60dp</dimen>
+</resources>

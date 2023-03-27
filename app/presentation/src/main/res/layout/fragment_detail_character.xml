@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.detail.DetailCharacterFragment">
+
+    <ImageView
+        android:id="@+id/imCharacter"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        tools:src="@drawable/ic_launcher_background"
+        android:layout_marginTop="@dimen/margin_big"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_big"
+        android:layout_marginTop="@dimen/margin_big"
+        android:textSize="@dimen/font_medium"
+        tools:text="RICK"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imCharacter"/>
+
+
+    <TextView
+        android:id="@+id/tvlastlocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_big"
+        android:layout_marginStart="@dimen/margin_big"
+        android:textSize="@dimen/font_small"
+        android:text="Last Location:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvStatus"/>
+
+    <TextView
+        android:id="@+id/tvlocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:textSize="@dimen/font_small"
+        tools:text="Alive-Human"
+        app:layout_constraintStart_toEndOf="@id/tvlastlocation"
+        app:layout_constraintTop_toTopOf="@id/tvlastlocation"
+        app:layout_constraintBottom_toBottomOf="@id/tvlastlocation"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
